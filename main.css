@@ -1,0 +1,259 @@
+/* world settings */
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+}
+.sub-spacer{
+width: 100vw;
+height: 10rem;
+background-color: white;
+color: white;
+}
+a{
+    text-decoration: none;
+}
+
+/* frame1 starts here */
+.frame1-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+}
+
+.leftside {
+    background-color: #B0BC4E;
+}
+
+.leftside,
+.rightside {
+    flex-basis: 50%;
+    height: 100%;
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+}
+
+/* navbarstarts here */
+.leftside-navbar {
+    padding: 1rem 0 1rem 0;
+
+}
+
+.leftside-navbar ul {
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.leftside-navbar li {
+    margin-left: 1rem;
+}
+
+.leftside-container {
+    /* border: 2px solid black; */
+    display: flex;
+
+}
+
+.leftside-line2 {
+    width: 100%;
+    background-image: url(leftsideimg.png);
+    min-height: 70rem;
+    background-origin: border-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
+    margin: 1rem;
+    float: right;
+}
+
+/*  */
+/* rightside starts here */
+.rightside {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightside-header,
+.rightside-text,
+.rightside-button {
+    float: right;
+    text-align: right;
+}
+
+.rightside-header {
+    margin: 10rem 4rem 0 2rem;
+    font-size: 4rem;
+    /* border: 2px solid black; */
+}
+
+.rightside-text {
+    font-size: 2.5rem;
+    margin: 0 2rem 0 2rem;
+    margin-right: 4rem;
+}
+
+#order-button {
+    margin: 0 2rem 0 2rem;
+    color: white;
+    font-size: 2rem;
+    padding: 2rem 4rem;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+#header-1 {
+    margin-bottom: 0;
+}
+
+/* frmae1 ends here */
+
+/* frame2 starts here */
+.frame2-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 1.5rem;
+    /* border: 2px solid black; */
+    background-color: white;
+}
+
+.frame2-container-inner-form {
+    padding: 1rem;
+    width: 80%;
+    height: 100%;
+    background-color: black;
+    margin: auto 1rem auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frame2-container-inner-form-line1,
+.frame2-container-inner-form-line2,
+.frame2-container-inner-form-line3{
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    /* margin-right: 4rem; */
+   max-width: 40em;
+    height: 5rem;
+    color: white;
+
+}
+#input-form{
+    width: 50rem;
+    height: 40rem;
+    background-color: white;
+}
+/* footer starts here */
+.footer-container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #B0BC4E;
+}
+.footer-container-line1, .footer-container-line2 {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.footer-container-line2{
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    border-top: 2px solid black;
+}
+/* Responsive adjust */
+@media (max-width: 750px) {
+    .frame1-container {
+        flex-direction: column;
+    }
+
+    .leftside-line2 {
+        min-height: 25rem;
+        color: red;
+    }
+
+    .rightside-header {
+        margin: 5rem 3rem 0 1rem;
+        font-size: 2rem;
+    }
+
+    .rightside-text {
+        font-size: 1.5rem;
+        margin: 0 3rem 0 1rem;
+    }
+
+    .rightside {
+        padding-bottom: 0.35rem;
+    }
+
+    #order-button {
+        margin: 0 1rem 0 1rem;
+        color: white;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 50px;
+        margin-right:3rem;
+    }
+    #input-form{
+        width: 30rem;
+        height: 20rem;
+    }
+    .frame2-lines{
+        font-size: 1.5rem;
+    }
+    .frame2-container-inner-form-line1{
+        font-size: 2rem;
+    }
+    .sub-spacer{
+        height: 1rem;
+        }
+}
+@media (max-width:450px){
+    #input-form{
+        width: 15rem;
+        height: 10rem;
+    }
+    .sub-spacer{
+        height: 1rem
+        }
+
+  
+}
+
+@media(max-height: 600px) {
+
+    .leftside-line2 {
+        min-height: 50rem;
+        color: red;
+    }
+    .rightside-text{
+       font-size: 2rem;
+    }.sub-spacer{
+        height: 1rem;
+        }
+}
